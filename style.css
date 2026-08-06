@@ -1,0 +1,195 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+
+    background: linear-gradient(
+        180deg,
+        #02152d 0%,
+        #053b6b 45%,
+        #0d7b92 100%
+    );
+
+    color:white;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    font-size:60px;
+    margin:0;
+}
+
+h2{
+    font-weight:normal;
+    margin-bottom:40px;
+}
+
+.cidade{
+    width:100%;
+    height:100vh;
+}
+
+.cenario{
+    position:relative;
+    width:100%;
+    height:120%;
+    overflow:hidden;
+}
+
+.ceu{
+    position:absolute;
+    width:100%;
+    height:80%;
+    background:linear-gradient(#0b2f63,#4fc3f7);
+}
+.sol{
+    /* posição */
+    position:absolute;
+    top:70px;
+    left:120px;
+
+    /* cor */
+    background:#fff8dc;
+
+    /* tamanho */
+    width:90px;
+    height:90px;
+
+    /* formato */
+    border-radius:50%;
+
+    /* brilho */
+    box-shadow:
+        0 0 20px white,
+        0 0 40px white;
+}
+
+.lua{
+
+    position:absolute;
+
+    top:70px;
+
+    right:120px;
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#fff8dc;
+
+    box-shadow:
+    0 0 20px white,
+    0 0 40px white,
+    0 0 80px white;
+}
+.predios{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:35%;
+    background:#222;
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-end;
+}
+
+
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 100px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.cidade{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:320px;
+}
+
+.predio{
+    position:absolute;
+    bottom:0;
+    background:#1a1a1a;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+
+.p1{
+    left:3%;
+    width:120px;
+    height:220px;
+}
+
+.p2{
+    left:18%;
+    width:90px;
+    height:300px;
+}
+
+.p3{
+    left:33%;
+    width:150px;
+    height:180px;
+}
+
+.p4{
+    left:52%;
+    width:100px;
+    height:280px;
+}
+
+.p5{
+    left:68%;
+    width:140px;
+    height:240px;
+}
+
+.p6{
+    left:87%;
+    width:90px;
+    height:310px;
+}
+
+.predio{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content:flex-start;
+    gap:10px;
+    padding-top:20px;
+}
+
+.janela{
+    width:15px;
+    height:20px;
+    background:#ffd54f;
+    border-radius:2px;
+    animation:piscar 4s infinite;
+}
+
+@keyframes piscar{
+    0%,70%{
+        opacity:1;
+    }
+
+    75%,85%{
+        opacity:0.2;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
