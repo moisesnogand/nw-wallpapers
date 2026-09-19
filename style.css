@@ -43,6 +43,17 @@ h2{
     width:100%;
     height:80%;
     background:linear-gradient(#0b2f63,#4fc3f7);
+    transition: background 2s ease;
+}
+
+.ceu-transicao{
+    position:absolute;
+    width:100%;
+    height:80%;
+    background: #000428;   
+    opacity:0;
+    transition: opacity 5s ease;
+    pointer-events:none;
 }
 .sol{
     /* posição */
@@ -59,7 +70,8 @@ h2{
 
     /* formato */
     border-radius:50%;
-
+    /* opacidade */
+    opacity: 0;
     /* brilho */
     box-shadow:
         0 0 20px white,
@@ -67,21 +79,19 @@ h2{
 }
 
 .lua{
-
+    /*posicao*/
     position:absolute;
-
     top:70px;
-
     right:120px;
-
     width:90px;
-
     height:90px;
-
+    /* formato */
     border-radius:50%;
-
+    /* opacidade */
+    opacity: 0;
+    /* cor */
     background:#fff8dc;
-
+    /* brilho */
     box-shadow:
     0 0 20px white,
     0 0 40px white,
